@@ -2,7 +2,7 @@
   <div class="text-editor">
     <EditArea/>
     <PreviewArea/>
-    <button >Test</button>
+    <!-- <button >Test</button> -->
   </div>
 </template>
 
@@ -38,5 +38,6 @@ export default {
 .text-editor {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 </style>
