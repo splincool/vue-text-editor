@@ -36,7 +36,7 @@ export default {
       this.pastStateInterval = setInterval(function () {
         localStorage.setItem('inputFieldsPastState', JSON.stringify(self.$store.state.inputFields))
         self.$store.commit('pastStateVisibleValue', true)
-      }, 10000)
+      }, 30000)
     }
   },
   beforeDestroy () {
