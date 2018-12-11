@@ -62,6 +62,7 @@ export default {
         fieldType: e.target.name,
         value: e.target.value
       })
+      this.$store.commit('currentStateVisibleValue', false)
     },
     onBlur () {
       this.$store.dispatch('saveInLocalStorage')
@@ -76,12 +77,22 @@ export default {
   flex-direction: column;
   padding: 15px;
   width: 500px;
-  margin: 0 50px 50px 0;
+  margin: 20px 50px 0px 0px;
   -webkit-box-shadow: 0px 0px 5px 0px rgba(46,46,46,1);
   -moz-box-shadow: 0px 0px 5px 0px rgba(46,46,46,1);
   box-shadow: 0px 0px 5px 0px rgba(46,46,46,1);
 }
+.edit-area input {
+  margin-bottom: 15px;
+}
 .body-text {
   resize: none;
+}
+.body-text-type {
+  display: flex;
+  align-items: baseline;
+}
+.body-text-type input[type="radio"] {
+  margin: 0 5px 0 10px;
 }
 </style>

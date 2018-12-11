@@ -12,7 +12,9 @@ export default new Vuex.Store({
       firstName: '',
       lastName: '',
       email: ''
-    }
+    },
+    pastStateVisible: false,
+    currentStateVisible: false
   },
   mutations: {
     changeFieldState (state, payload) {
@@ -20,6 +22,12 @@ export default new Vuex.Store({
     },
     updateInputFields (state, inputFields) {
       state.inputFields = inputFields
+    },
+    pastStateVisibleValue (state, value) {
+      state.pastStateVisible = value
+    },
+    currentStateVisibleValue (state, value) {
+      state.currentStateVisible = value
     }
   },
   actions: {
