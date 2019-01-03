@@ -5,7 +5,7 @@
       type="text"
       name="headline"
       @input="updateValue"
-      v-model="$store.state.inputFields.headline"
+      :value="$store.state.inputFields.headline"
       @blur="onBlur"
     />
     <label for="subheadline">Subheadline:</label>
@@ -13,7 +13,7 @@
       type="text"
       name="subheadline"
       @input="updateValue"
-      v-model="$store.state.inputFields.subheadline"
+      :value="$store.state.inputFields.subheadline"
       @blur="onBlur"
     />
     <label for="bodyText">Body text:</label>
@@ -22,7 +22,7 @@
       class="body-text"
       name="bodyText"
       @input="updateValue"
-      v-model="$store.state.inputFields.bodyText"
+      :value="$store.state.inputFields.bodyText"
       @blur="onBlur">
     </textarea>
     <h4>Contact information</h4>
@@ -31,7 +31,7 @@
       type="text"
       name="firstName"
       @input="updateValue"
-      v-model="$store.state.inputFields.firstName"
+      :value="$store.state.inputFields.firstName"
       @blur="onBlur"
     />
    <label for="lastName">Last name:</label>
@@ -39,7 +39,7 @@
       type="text"
       name="lastName"
       @input="updateValue"
-      v-model="$store.state.inputFields.lastName"
+      :value="$store.state.inputFields.lastName"
       @blur="onBlur"
     />
     <label for="email">Email:</label>
@@ -47,7 +47,7 @@
       type="email"
       name="email"
       @input="updateValue"
-      v-model="$store.state.inputFields.email"
+      :value="$store.state.inputFields.email"
       @blur="onBlur"
     />
   </div>
