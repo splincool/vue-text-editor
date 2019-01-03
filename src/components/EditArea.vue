@@ -72,6 +72,7 @@ export default {
 </script>
 
 <style>
+
 .edit-area {
   display: flex;
   flex-direction: column;
